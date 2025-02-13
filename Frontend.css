@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  justify-content: center; /* Menengahkan semua elemen */
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  gap: 20px; /* Jarak antar elemen */
+}
+
+.nav-left, .nav-right, .nav-center {
+  display: flex;
+  gap: 15px; /* Beri sedikit jarak antar tautan */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+  /* Layer 1 */
+  .Layer1 {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  button {
+    background-color: orange;
+    color: black;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 25px; 
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .Profil {
+    border: 8px solid orange;
+    width: 350px;
+    height: 350px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-top: -360px;
+    margin-right: 160px;
+  }
+
+  /* Layer 2 */
+  .Layer2 {
+    background-color: orange;
+    color: black;
+    padding: 40px;
+  }
+  
+  .Text2 {
+    text-align: center;
+    position: relative;
+    bottom: 10px ;
+  }
+  
+  .card1 {
+  background: white;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  position: relative;
+  left: 200px;
+  bottom: 4px;
+  .TextCard1 {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .ButtonCard1 {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .PhotoCard1 {
+    border-radius: 25px;
+    border: 0px ;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+  }
+  }
+
+  .card2 {
+  background: white;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  position: absolute;
+  left: 700px;
+  top: 673px;
+  .TextCard2 {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .ButtonCard2 {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    text-align: center;
+  }
+  .PhotoCard2 {
+    border-radius: 25px;
+    border: 0px ;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+  }
+  }
+  
+  .card3 {
+  background: white;
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  position: absolute;
+  left: 1180px;
+  top: 673px;
+  .TextCard3 {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .ButtonCard3 {
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+    text-align: center;
+  }
+  .PhotoCard3 {
+    border-radius: 25px;
+    border: 0px ;
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+  }
+  }
+
+.ProjectList1 h5, .ProjectList2 h5, .ProjectList3 h5 {
+    font-size: 20px;  
+    font-weight: bold; 
+    margin-bottom: 10px; 
+    padding-top: 30px;
+}
+
+.ProjectList1 ol, .ProjectList2 ol, .ProjectList3 ol {
+    font-size: 18px; 
+    padding-left: 20px; 
+    text-align: left; 
+    display: inline-block;
+}
+
+.ProjectList1, .ProjectList2, .ProjectList3 {
+    text-align: center; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.ProjectList1 ul, .ProjectList2 ul, .ProjectList3 ul {
+    list-style-type: decimal; 
+    padding-left: 0;
+    text-align: center;
+}
+
+.ProjectList1 li, .ProjectList2 li, .ProjectList3 li {
+    margin: 5px 0;
+}
+
+/* layer3 */ 
+.Layer3 {
+  padding-top: 60px;
+  background-color: #f4f3f1;
+} 
+
+.Contact {
+    
+  .name {
+    border: 3px solid orange;
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    width: 500px;
+  }
+  .email {
+    border: 3px solid orange;
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    width: 500px;
+  }
+  .number {
+    border: 3px solid orange;
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    width: 500px;
+  }
+  .massage {
+    border: 3px solid orange;
+    border-radius: 10px;
+    text-align: center;
+    height: 80px;
+    width: 500px;
+    resize: none; 
+    padding-top: 25px; 
+    font-size: 16px; 
+    line-height: 30px; 
+  }
+  .ContactButton {
+    position: relative;
+    bottom: 10px;
+  }
+
+  
+}
+
+.Info {
+  width: 1110.5px;
+  height: 660px;
+  background-color: black;
+  position: absolute;
+  left: 580px;
+  top: 1218px;
+   
+  .ButtonCon{
+    background-color: black;
+  }
+
+  .SubContact {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 90px ;
+    left: 40px;
+  }
+  .Instag {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 170px ;
+    left: 150px;
+  }
+  .Gmail {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 251px ;
+    left: 150px;
+  }
+  .Phone {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 330px ;
+    left: 150px;
+  }
+  .Linkedin {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 415px ;
+    left: 150px;
+  }
+  .git {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 490px ;
+    left: 150px;
+  }
+}
+
+.Gambar {
+  .instagPhoto {
+    position: absolute;
+    top: 1300px;
+    left: 555px;
+    transform: scale(0.2);
+  }
+  .linkedinPhoto {
+    position: absolute;
+    top: 1400px;
+    left: 410px;
+    transform: scale(0.1);
+  }
+  .githubphoto {
+    position: absolute;
+    top: 1620px;
+    left: 553px;
+    transform: scale(0.3);
+  }
+  .numberphoto {
+    position: absolute;
+    top: 1460px;
+    left: 553px;
+    transform: scale(0.25);
+    border-radius: 50%;
+  }
+  .emailphoto {
+    position: absolute;
+    top: 1365px;
+    left: 540px;
+    transform: scale(0.2);
+    
+  }
+}
+
+/* layer4 */
+.Layer4 {
+  background-color: white;
+  padding: 20px; 
+  margin: 20px;
+
+}

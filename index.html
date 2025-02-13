@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Daud Achmad Web Portofolio</title>
+  
+  <link rel="stylesheet" type="text/css" href="Frontend.css"> 
+  
+</head>
+<body>
+  
+  <script src="Back.js"></script>
+
+   <!-- Navbar -->
+
+   <nav class="navbar">
+    <div class="nav-left">
+        <a href="#home">Home</a>
+    </div>
+    <div class="nav-center">
+        <a href="#about">About</a>
+    </div>
+    <div class="nav-right">
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+  <!-- Layer 1 -->
+  <div class="Layer1" id="home">
+    <h1>Welcome<br>To my Web Portofolio,</h1>
+    <h2>Hello everyone, my name is Daud Achmad. I was born in Balikpapan. <br>  
+        On this website, I will introduce myself, <br>  
+        share my story, and, of course, highlight my achievements. <br>  
+        I pursue a career in the field of <br>  
+        Programmer, Artist, and Writing.
+    </h2>
+    <div class="content-wrapper">
+      <a href="CV.pdf" download="CV" target="_blank"><button><b>Donwload CV</b></button></a>
+      <img class="Profil" src="Foto Profil.jpeg" alt="Foto Profil">
+    </div>
+  </div>
+
+  <!-- Layer 2 -->
+  <div class="Layer2" id="about">
+    
+      <h1 class="Text2">My Abilities</h1>
+      
+      <div class="card1">
+        <p class="TextCard1">"I started to enjoy writing since elementary school."</p>
+        <button class="ButtonCard1"><b>Learn More</b></button>
+        <img class="PhotoCard1" src="Writing.jpg" alt="Writing">
+        <div class="ProjectList1"></div> 
+    </div>
+    
+    <div class="card2">
+        <p class="TextCard2">"I started learning to draw in the first year of high school, and here are my artworks."</p>
+        <button class="ButtonCard2"><b>Learn More</b></button>
+        <img class="PhotoCard2" src="2D.jpg" alt="2D">
+        <div class="ProjectList2"></div>
+    </div>
+    
+    <div class="card3">
+        <p class="TextCard3">"I got into the world of coding back in middle school, and here are some of my achievements."</p>
+        <button class="ButtonCard3"><b>Learn More</b></button>
+        <img class="PhotoCard3" src="Koding.jpg" alt="Koding">
+        <div class="ProjectList3"></div> 
+    </div>
+    
+  </div>
+   
+   <!-- Layer 3 --> 
+    <div class="Layer3" id="contact">
+
+      <h1>Contact Me!</h1>
+      
+      <form class="Contact" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="bdc55972-fa8d-40d0-8a06-5753bdb49032">
+
+        <label for="name"><b>Name:</b></label> <br> <br>
+        <input class="name" id="name" name="name" placeholder="Whats is Your name?" required> <br> <br>
+    
+        <label for="email"><b>email:</b></label> <br> <br>
+        <input class="email" id="email" name="email" type="email" placeholder="Write Your email in here" required> <br> <br>
+
+        <label for="Number"><b>Number Phone:</b></label> <br> <br>
+        <input class="number" id="number" name="number" type="number" placeholder="Give me Your phone number!"> <br> <br>
+    
+        <label for="Massage"><b>Message:</b></label> <br> <br>
+        <textarea class="massage" id="message" name="message" rows="4" placeholder="Are You asking for?" required></textarea> <br> <br>
+
+        <button class="ContactButton" type="submit">Send it!</button>
+        
+      </form>
+
+      <div class="Info">
+        <h1 class="SubContact">Contact Info.</h1>
+        
+        <a href="https://www.instagram.com/dabideart/g" target="_blank">
+          <button class="ButtonCon"><h4 class="Instag">Instagram: @shrxs96</h4></button>
+        </a>
+        
+        <a href="https://mail.google.com/mail/?view=cm&to=daud56ach@gmail.com&su=Email To Me&body=Halo, Saya tertarik untuk bekerja sama dengan anda"  target="_blank">
+          <button class="ButtonCon"><h4 class="Gmail">Email: daud56ach@gmail.com</h4></button>
+        </a>
+        <a href="https://wa.me/6285752507430?text=Halo, Saya tertarik bekerja sama dengan anda" target="_blank">
+          <button class="ButtonCon"><h4 class="Phone">Number Phone: 085752507430</h4></button>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/daud-achmad-390986262/" target="_blank">
+          <button class="ButtonCon"><h4 class="Linkedin">Linkedin: Daud Achmad</h4></button>
+        </a>
+
+        <a href="https://github.com/Santuy06" target="_blank">
+          <button class="ButtonCon"><h4 class="git">Github: Santuy06</h4></button>
+        </a>
+
+      </div>
+
+      <div class="Gambar">
+        <img class="instagPhoto" src="Instag.png" alt="Instag"> 
+        <img class="linkedinPhoto" src="linkedin-app-white-icon.png" alt="linkedin-app-white-icon"> 
+        <img class="githubphoto" src="github.png" alt="github"> 
+        <img class="emailphoto" src="mail-xxl.png" alt="email"> 
+        <img class="numberphoto" src="telp.png" alt="number">
+      </div>
+      
+    </div>
+
+    <!-- Layer 4 --> 
+     <div class="Layer4">
+      <h4 class="TextLayer">© 2025 Daud Achmad. All rights reserved.</h4> 
+     </div>
+    
+</body>
+</html>
