@@ -1,12 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
 /* Navbar */
 
@@ -25,87 +26,93 @@
   gap: 20px; /* Jarak antar elemen */
 }
 
-.nav-left, .nav-right, .nav-center {
+.nav-left,
+.nav-right,
+.nav-center {
   display: flex;
   gap: 15px; /* Beri sedikit jarak antar tautan */
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .navbar a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+main {
+  width: 100%;
+}
 
-  /* Layer 1 */
-  .Layer1 {
-    background-color: black;
-    color: white;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+/* Layer 1 */
+.Layer1 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
-  h1 {
-    font-size: 80px;
-    margin-bottom: 20px;
-  }
+h1 {
+  font-size: 80px;
+  margin-bottom: 20px;
+}
 
-  h2 {
-    margin-bottom: 40px;
-  }
+h2 {
+  margin-bottom: 40px;
+}
 
-  button {
-    background-color: orange;
-    color: black;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 25px; 
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-  }
+button {
+  background-color: orange;
+  color: black;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
 
-  .content-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  .Profil {
-    border: 8px solid orange;
-    width: 350px;
-    height: 350px; 
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-top: -360px;
-    margin-right: 160px;
-  }
+.Profil {
+  border: 8px solid orange;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  /* Layer 2 */
-  .Layer2 {
-    background-color: orange;
-    color: black;
-    padding: 40px;
-  }
-  
-  .Text2 {
-    text-align: center;
-    position: relative;
-    bottom: 10px ;
-  }
-  
-  .card1 {
+/* Layer 2 */
+.Layer2 {
+  background-color: orange;
+  color: black;
+  padding: 40px;
+}
+
+.Text2 {
+  text-align: center;
+  position: relative;
+  bottom: 10px;
+}
+
+.card1 {
   background: white;
   width: 300px;
   height: 500px;
@@ -131,16 +138,16 @@ html {
   }
   .PhotoCard1 {
     border-radius: 25px;
-    border: 0px ;
+    border: 0px;
     width: 230px;
     height: 230px;
     position: absolute;
     top: 30px;
     left: 35px;
   }
-  }
+}
 
-  .card2 {
+.card2 {
   background: white;
   width: 300px;
   height: 500px;
@@ -163,16 +170,16 @@ html {
   }
   .PhotoCard2 {
     border-radius: 25px;
-    border: 0px ;
+    border: 0px;
     width: 230px;
     height: 230px;
     position: absolute;
     top: 30px;
     left: 35px;
   }
-  }
-  
-  .card3 {
+}
+
+.card3 {
   background: white;
   width: 300px;
   height: 500px;
@@ -195,54 +202,63 @@ html {
   }
   .PhotoCard3 {
     border-radius: 25px;
-    border: 0px ;
+    border: 0px;
     width: 230px;
     height: 230px;
     position: absolute;
     top: 30px;
     left: 35px;
   }
-  }
-
-.ProjectList1 h5, .ProjectList2 h5, .ProjectList3 h5 {
-    font-size: 20px;  
-    font-weight: bold; 
-    margin-bottom: 10px; 
-    padding-top: 30px;
 }
 
-.ProjectList1 ol, .ProjectList2 ol, .ProjectList3 ol {
-    font-size: 18px; 
-    padding-left: 20px; 
-    text-align: left; 
-    display: inline-block;
+.ProjectList1 h5,
+.ProjectList2 h5,
+.ProjectList3 h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-top: 30px;
 }
 
-.ProjectList1, .ProjectList2, .ProjectList3 {
-    text-align: center; 
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
+.ProjectList1 ol,
+.ProjectList2 ol,
+.ProjectList3 ol {
+  font-size: 18px;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
 }
 
-.ProjectList1 ul, .ProjectList2 ul, .ProjectList3 ul {
-    list-style-type: decimal; 
-    padding-left: 0;
-    text-align: center;
+.ProjectList1,
+.ProjectList2,
+.ProjectList3 {
+  text-align: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
 
-.ProjectList1 li, .ProjectList2 li, .ProjectList3 li {
-    margin: 5px 0;
+.ProjectList1 ul,
+.ProjectList2 ul,
+.ProjectList3 ul {
+  list-style-type: decimal;
+  padding-left: 0;
+  text-align: center;
 }
 
-/* layer3 */ 
+.ProjectList1 li,
+.ProjectList2 li,
+.ProjectList3 li {
+  margin: 5px 0;
+}
+
+/* layer3 */
 .Layer3 {
   padding-top: 60px;
   background-color: #f4f3f1;
-} 
+}
 
 .Contact {
-    
   .name {
     border: 3px solid orange;
     border-radius: 10px;
@@ -270,17 +286,15 @@ html {
     text-align: center;
     height: 80px;
     width: 500px;
-    resize: none; 
-    padding-top: 25px; 
-    font-size: 16px; 
-    line-height: 30px; 
+    resize: none;
+    padding-top: 25px;
+    font-size: 16px;
+    line-height: 30px;
   }
   .ContactButton {
     position: relative;
     bottom: 10px;
   }
-
-  
 }
 
 .Info {
@@ -290,8 +304,8 @@ html {
   position: absolute;
   left: 580px;
   top: 1218px;
-   
-  .ButtonCon{
+
+  .ButtonCon {
     background-color: black;
   }
 
@@ -299,42 +313,42 @@ html {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 90px ;
+    top: 90px;
     left: 40px;
   }
   .Instag {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 170px ;
+    top: 170px;
     left: 150px;
   }
   .Gmail {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 251px ;
+    top: 251px;
     left: 150px;
   }
   .Phone {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 330px ;
+    top: 330px;
     left: 150px;
   }
   .Linkedin {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 415px ;
+    top: 415px;
     left: 150px;
   }
   .git {
     color: white;
     font-size: 40px;
     position: absolute;
-    top: 490px ;
+    top: 490px;
     left: 150px;
   }
 }
@@ -370,14 +384,12 @@ html {
     top: 1365px;
     left: 540px;
     transform: scale(0.2);
-    
   }
 }
 
 /* layer4 */
 .Layer4 {
   background-color: white;
-  padding: 20px; 
+  padding: 20px;
   margin: 20px;
-
 }
